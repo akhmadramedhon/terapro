@@ -1,14 +1,17 @@
 import Header from "../../component/Header"
-import CardMusic from "../../component/Card"
+
+import PropertyCard from "../../component/Card"
 
 function PageUser (){
     return (
         <>
           <Header />
-          <div className=""></div>
-          <h1>Hallo dunia</h1>
-          <div className="flex bg-black justify-center ">
-            <CardMusic />
+          <div className="grid grid-flow-col justify-center p-4 gap-2 ">
+            <PropertyCard />
+            <PropertyCard />
+            <PropertyCard />
+            <PropertyCard />
+            <PropertyCard />
           </div>
         </>
       )
