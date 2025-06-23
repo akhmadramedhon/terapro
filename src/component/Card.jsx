@@ -4,6 +4,7 @@ import {
   ListOrdered,
   Landmark,
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function PropertyCard() {
   return (
@@ -44,6 +45,9 @@ function PropertyCard() {
         <div className="flex items-center text-sm text-gray-600 space-x-2">
           <Calendar className="h-4 w-4" />
           <span>4 Januari 2025</span>
+        </div>
+        <div className="flex items-center text-sm text-gray-600 space-x-2">
+          <Link to="/detail-properti" className="hover:underline text-right w-full text-black">Detail Property</Link>
         </div>
       </div>
     </div>
