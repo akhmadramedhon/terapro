@@ -25,9 +25,9 @@ const router = createBrowserRouter([
     element: <Layout />, // layout with nav/header
     errorElement: <ErrorPage />, // fallback error UI
     children: [
-      { path: '/terapro/', element: <PageUser /> },
+      { path: '/', element: <PageUser /> },
       {
-        path: '/terapro/isi-data',
+        path: '/isi-data',
         element: (
           <ProtectedRoute>
             <IsiDataUser />
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: '/terapro/dashboard-user',
+        path: '/dashboard-user',
         element: (
           <ProtectedRoute>
             <DashboardUser />
